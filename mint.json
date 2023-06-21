@@ -1,59 +1,74 @@
 {
-  "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
-  "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
-  },
-  "favicon": "/favicon.png",
-  "colors": {
-    "primary": "#12A7D3",
-    "light": "#81D7F7",
-    "dark": "#004E7A"
-  },
-  "topbarLinks": [
-    {
-      "name": "Documentation",
-      "url": "https://mintlify.com/docs"
-    }
-  ],
-  "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
-  },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "navigation": [
-    {
-      "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
-    },
-    {
-      "group": "Essentials",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
-    },
-    {
-      "group": "API Documentation",
-      "pages": ["api-reference/authentication"]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
-      ]
-    }
-  ],
-  "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
-  },
-  "backgroundImage": "/background.png"
+	"$schema": "https://mintlify.com/schema.json",
+	"name": "Serenys",
+	"logo": {
+		"dark": "/logo/dark.png",
+		"light": "/logo/light.png"
+	},
+	"favicon": "/favicon.png",
+	"colors": {
+		"primary": "#A0D0C2",
+		"light": "#81D7F7",
+		"dark": "#004E7A"
+	},
+	"topbarCtaButton": {
+		"name": "API",
+		"url": "https://serenys.xyz"
+	},
+	"anchors": [
+		{
+			"name": "GitHub",
+			"icon": "github",
+			"url": "https://github.com/serenysjs"
+		},
+		{
+			"name": "Servidor de Suporte",
+			"icon": "discord",
+			"url": "https://discord.com/invite/discloud"
+		}
+	],
+	"navigation": [
+		{
+			"group": "Começando",
+			"pages": ["getting-started/introduction"]
+		},
+		{
+			"group": "Referência",
+			"pages": [
+				{
+					"group": "REST API",
+					"pages": [
+						"reference/rest-api/introduction",
+						{
+							"group": "Discord",
+							"pages": [
+								"reference/rest-api/discord/get-user",
+								"reference/rest-api/discord/get-invite"
+							]
+						},
+						{
+							"group": "Instagram",
+							"pages": [
+								"reference/rest-api/instagram/get-user",
+								"reference/rest-api/instagram/get-post"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"group": "SDKs",
+			"pages": [
+				"sdks/overview",
+				{
+					"group": "Server Side",
+					"pages": ["sdks/server/js"]
+				}
+			]
+		}
+	],
+	"footerSocials": {
+		"github": "https://github.com/serenysjs"
+	}
 }

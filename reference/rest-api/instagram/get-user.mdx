@@ -1,0 +1,46 @@
+---
+title: "Obter informações de um usuário"
+api: "GET https://serenys.xyz/api/instagram/users/hhh.e_c.v"
+description: "Este endpoint te permite obter informações de um usuário do Instagram."
+---
+
+### Resposta
+
+<Expandable title="Parâmetros">
+  <ResponseField name="account" type="object">
+    Informações da conta.
+  </ResponseField>
+
+  <ResponseField name="stats" type="object">
+    Estatísticas da conta, como seguidores, seguindo, publicações, etc.
+  </ResponseField>
+</Expandable>
+
+<ResponseExample>
+```json Response
+  {
+    "account": {
+      "id": "57275466802",
+      "username": "hhh.e_c.v",
+      "full_name": "HONG EUNCHAE of LE SSERAFIM",
+      "private": false,
+      "verified": true,
+      "business": false,
+      "bio": "HONG EUNCHAE of LE SSERAFIM from Source Music",
+      "website": null,
+      "avatar_url": "https://instagram.ftpf1-2.fna.fbcdn.net/v/t51.2885-19/323156666_738165050639039_185003375417622615_n.jpg?_nc_ht=instagram.ftpf1-2.fna.fbcdn.net&_nc_cat=1&_nc_ohc=T4C0KDin4uoAX8reijG&edm=AEF8tYYBAAAA&ccb=7-5&oh=00_AfBvGnjPx3BwO4UvXAzuxlvTZHAnTBeMiKnc_nVgjWdw0Q&oe=64971F35&_nc_sid=4105f5"
+    },
+    "stats": {
+      "followers": {
+        "total": 3973597,
+        "formatted": "3.973.597"
+      },
+      "following": {
+        "total": 5,
+        "formatted": "5"
+      },
+      "posts_count": 66
+    }
+  }
+```
+</ResponseExample>

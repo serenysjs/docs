@@ -1,0 +1,47 @@
+---
+title: "Server-side JS SDK"
+sidebarTitle: "JavaScript"
+description: "O SDK Server-side em JavaScript da Serenys que permite que você interaja com todos os endpoints da API da Serenys."
+---
+
+Atualmente, este SDK está disponível apenas para Node.js.
+
+## Instalando
+
+```bash
+npm install serenys
+
+# Se você usa yarn
+yarn add serenys
+
+# Se você usa pnpm
+pnpm add serenys
+```
+
+## Criando uma instância do SDK
+
+```js JS
+import { Serenys } from "serenys";
+
+// Exportando a instância do SDK para que você possa usá-la em toda o seu código base
+export const serenys = new Serenys();
+
+// Discord
+
+// Exemplo: Pegando um usuário do Discord
+await serenys.discord.users.get("299262860440371202");
+
+// Exemplo: Pegando um convite de um servidor do Discord
+await serenys.discord.invites.get("discloud");
+
+// Instagram
+
+// Exemplo: Pegando um usuário do Instagram
+await serenys.instagram.users.get("hhh.e_c.v");
+
+// Exemplo: Pegando um post de um usuário Instagram
+await serenys.instagram.posts.get("Ctt93euSakq");
+
+// Exemplo: Pegando as últimas 4 postagens de um usuário do Instagram
+await serenys.instagram.feed.get("hhh.e_c.v");
+```

@@ -1,0 +1,54 @@
+---
+title: "Obter informações de um convite de um servidor"
+api: "GET https://serenys.xyz/api/discord/invites/discloud"
+description: "Este endpoint te permite obter informações de um convite de algum servidor."
+---
+
+### Resposta
+
+<Expandable title="Parâmetros">
+	<ResponseField name="invite" type="object">
+		Informações do convite
+	</ResponseField>
+
+  <ResponseField name="guild" type="object">
+	  Informações básicas do servidor
+  </ResponseField>
+
+  <ResponseField name="guild_assets" type="object">
+    Informações de assets do servidor, como o ícone e o banner
+  </ResponseField>
+</Expandable>
+
+<ResponseExample>
+```json Response
+  {
+    "invite": {
+      "code": "discloud",
+      "channel": {
+        "id": "1117549023423897670",
+        "name": "📚・faq",
+        "type": "GuildText"
+      }
+    },
+    "guild": {
+      "id": "1096147449686523954",
+      "name": "Definitivamente não é a DisCloud",
+      "description": null,
+      "vanity_url": "discloud",
+      "nsfw_level": 0,
+      "nsfw": false,
+      "boosts_count": 30,
+      "total_members": 249,
+      "online_members": 43
+    },
+    "guild_assets": {
+      "icon_url": "https://cdn.discordapp.com/icons/1096147449686523954/a_07b01ac2c039193db5d3d9458d48c467.gif?size=4096",
+      "banner_url": "https://cdn.discordapp.com/banners/1096147449686523954/6cee02899fbd0ab13eb63786e397577e.png?size=4096",
+      "splash_url": "https://cdn.discordapp.com/splashes/1096147449686523954/de2972401b49ec670e31a4bc91983cf8.png?size=4096"
+    }
+
+}
+```
+</ResponseExample>
+

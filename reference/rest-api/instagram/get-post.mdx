@@ -1,0 +1,119 @@
+---
+title: "Obter informações de uma postagem"
+api: "GET https://serenys.xyz/api/instagram/posts/Ctt93euSakq"
+description: "Este endpoint te permite obter informações de uma postagem do Instagram."
+---
+
+### Resposta
+
+<Expandable title="Parâmetros">
+  <ResponseField name="account" type="object">
+    Informações básicas da conta.
+  </ResponseField>
+
+  <ResponseField name="post" type="object">
+	  Informações básicas da postagem, como o id, descrição e a data de publicação.
+  </ResponseField>
+
+  <ResponseField name="stats" type="object">
+	  Informações sobre as estatísticas da postagem, como a quantidade de imagens e
+	  vídeos, curtidas, comentários, etc.
+  </ResponseField>
+
+  <ResponseField name="media" type="object">
+    Informações sobre a mídia da postagem, como o tipo, a url e o tamanho.
+  </ResponseField>
+</Expandable>
+
+<ResponseExample>
+```json Response
+  {
+    "account": {
+      "username": "hhh.e_c.v",
+      "full_name": "HONG EUNCHAE of LE SSERAFIM"
+    },
+    "post": {
+      "id": "Ctt93euSakq",
+      "description": "Boom Boom Bomm\n-\n-\n💥",
+      "created_at": "2023-06-20T16:04:38.000Z"
+    },
+    "stats": {
+      "media_count": 9,
+      "likes": {
+        "total": 1141894,
+        "formatted": "1.141.894"
+      },
+      "comments": {
+        "total": 3853,
+        "formatted": "3.853"
+      }
+    },
+    "media": [
+      {
+        "url": "https://instagram.ftpf1-2.fna.fbcdn.net/v/t51.2885-15/355267448_1206355120043246_3903675663264809566_n.jpg?stp=dst-jpg_e35&_nc_ht=instagram.ftpf1-2.fna.fbcdn.net&_nc_cat=1&_nc_ohc=_2s3ZXNa7wYAX_NT-Yx&edm=AABBvjUBAAAA&ccb=7-5&ig_cache_key=MzEyOTQyOTQwMzI4MTk5NTc2Mw%3D%3D.2-ccb7-5&oh=00_AfCnkPjUP70NIX91_JIpOrlrBRFIKou6GvX-Af6yp9p1Ww&oe=64977749&_nc_sid=62388f",
+        "dimensions": {
+          "height": 1800,
+          "width": 1440
+        },
+        "type": "image"
+      },
+      {
+        "url": "https://instagram.ftpf1-2.fna.fbcdn.net/v/t51.2885-15/355390021_608287144614562_8317789929966518889_n.jpg?stp=dst-jpg_e35&_nc_ht=instagram.ftpf1-2.fna.fbcdn.net&_nc_cat=1&_nc_ohc=nnirSLKDA08AX98pJhw&edm=AABBvjUBAAAA&ccb=7-5&ig_cache_key=MzEyOTQyOTQwMzI3MzczNzIyMg%3D%3D.2-ccb7-5&oh=00_AfAdH4n8P4voT4PJ-ZqqW1rl1Q0tBzWVKdHIdy-ydaE6eg&oe=6497C903&_nc_sid=62388f",
+        "dimensions": {
+          "height": 1800,
+          "width": 1440
+        },
+        "type": "image"
+      },
+      {
+        "url": "https://instagram.ftpf1-2.fna.fbcdn.net/v/t51.2885-15/355067414_307994511562889_1305788767354772110_n.jpg?stp=dst-jpg_e35&_nc_ht=instagram.ftpf1-2.fna.fbcdn.net&_nc_cat=1&_nc_ohc=lj-vr48GQoUAX-oq-YH&edm=AABBvjUBAAAA&ccb=7-5&ig_cache_key=MzEyOTQyOTQwMzI1Njk4Mjk5OA%3D%3D.2-ccb7-5&oh=00_AfD-ZQwoGHxamRjCzZ6EuGaVOZjAmqgy2eJstP74yvhNZw&oe=64983835&_nc_sid=62388f",
+        "dimensions": {
+          "height": 1800,
+          "width": 1440
+        },
+        "type": "image"
+      },
+      {
+        "url": "https://instagram.ftpf1-2.fna.fbcdn.net/v/t51.2885-15/355070173_1073205696992996_142264356658207176_n.jpg?stp=dst-jpg_e35&_nc_ht=instagram.ftpf1-2.fna.fbcdn.net&_nc_cat=1&_nc_ohc=RwHeUl2xM5sAX81Y74U&edm=AABBvjUBAAAA&ccb=7-5&ig_cache_key=MzEyOTQyOTQwMzI3Mzc2NDQ0NA%3D%3D.2-ccb7-5&oh=00_AfA5xfNLoK1meLf0Si8qNigDlHSDj5AWLZCkITYuB7wIwA&oe=6496F46C&_nc_sid=62388f",
+        "dimensions": {
+          "height": 1800,
+          "width": 1440
+        },
+        "type": "image"
+      },
+      {
+        "url": "https://instagram.ftpf1-2.fna.fbcdn.net/v/t51.2885-15/354801782_287452803768647_5694775007467768560_n.jpg?stp=dst-jpg_e35&_nc_ht=instagram.ftpf1-2.fna.fbcdn.net&_nc_cat=1&_nc_ohc=_mPH94zLZBMAX8JCmZp&edm=AABBvjUBAAAA&ccb=7-5&ig_cache_key=MzEyOTQyOTQwMzI3MzY2MDk2Mg%3D%3D.2-ccb7-5&oh=00_AfAOmTfMeyMubi5A7iOzAQUhQiSl6-BWzZUAdEampaFfcg&oe=64977113&_nc_sid=62388f",
+        "dimensions": {
+          "height": 1800,
+          "width": 1440
+        },
+        "type": "image"
+      },
+      {
+        "url": "https://instagram.ftpf1-2.fna.fbcdn.net/v/t51.2885-15/354778855_751386636996134_7605922629834489070_n.jpg?stp=dst-jpg_e35&_nc_ht=instagram.ftpf1-2.fna.fbcdn.net&_nc_cat=1&_nc_ohc=RlP8auZuix0AX_pCKZ8&edm=AABBvjUBAAAA&ccb=7-5&ig_cache_key=MzEyOTQyOTQwMzQzMzAxNzY1Mw%3D%3D.2-ccb7-5&oh=00_AfCmWilkIOBT9vn5_1jUX4-U6L8sx3NvKl-1osZxbHLefw&oe=649794FC&_nc_sid=62388f",
+        "dimensions": {
+          "height": 1800,
+          "width": 1440
+        },
+        "type": "image"
+      },
+      {
+        "url": "https://instagram.ftpf1-2.fna.fbcdn.net/v/t51.2885-15/355706181_177957411683715_862881527829265424_n.jpg?stp=dst-jpg_e35&_nc_ht=instagram.ftpf1-2.fna.fbcdn.net&_nc_cat=1&_nc_ohc=65aXD4IThdQAX_Jc58r&edm=AABBvjUBAAAA&ccb=7-5&ig_cache_key=MzEyOTQyOTQwMzI1Njg2NjY5OA%3D%3D.2-ccb7-5&oh=00_AfDejsYZfAd8LX9nz8minolYQ_GuPotb8hEUWdYoq_fpDw&oe=6497D320&_nc_sid=62388f",
+        "dimensions": {
+          "height": 1800,
+          "width": 1440
+        },
+        "type": "image"
+      },
+      {
+        "url": "https://instagram.ftpf1-2.fna.fbcdn.net/v/t51.2885-15/354788567_2810196912455438_8257039904016074406_n.jpg?stp=dst-jpg_e35&_nc_ht=instagram.ftpf1-2.fna.fbcdn.net&_nc_cat=1&_nc_ohc=0OYbfv0gWcAAX8sFelw&edm=AABBvjUBAAAA&ccb=7-5&ig_cache_key=MzEyOTQyOTQwMzI1Njk4ODgxOA%3D%3D.2-ccb7-5&oh=00_AfA02md5V9UCn3DpYOqk7mbDYoo3cEZxZM-pJK3k7K7utQ&oe=6498BBE2&_nc_sid=62388f",
+        "dimensions": {
+          "height": 1800,
+          "width": 1440
+        },
+        "type": "image"
+      }
+    ]
+  }
+```
+</ResponseExample>
