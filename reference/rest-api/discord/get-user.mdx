@@ -1,30 +1,30 @@
 ---
-title: "Obter informações de um usuário"
+title: "Get User"
 api: "GET https://serenys.xyz/api/discord/users/299262860440371202"
-description: "Este endpoint te permite obter a informação de uma conta do Discord"
+description: "This endpoint allows you to get information from a Discord account"
 ---
 
-### Resposta
+### Response
 
-<Expandable title="Parâmetros">
+<Expandable title="Parameters">
 	<ResponseField name="user" type="object">
-		Informações básicas do usuário
+		Basic user information
 	</ResponseField>
   
   <ResponseField name="user_profile" type="object">
-    Informações do perfil do usuário, como suas insígnias, até seu sobre-mim
+    User profile information, such as your badges, up to your about me
 	</ResponseField>
 
   <ResponseField name="boost" type="object">
-	  Informações sobre o boost do usuário
+	  User boost information
   </ResponseField>
 
   <ResponseField name="legacy_username" type="string">
-	  O antigo nome de usuário
+	  The old username
   </ResponseField>
 
   <ResponseField name="connected_accounts" type="array">
-    Contas conectadas ao seu perfil do Discord
+    Accounts connected to your Discord profile
 	</ResponseField>
 </Expandable>
 

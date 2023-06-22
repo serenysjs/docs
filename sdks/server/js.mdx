@@ -1,47 +1,46 @@
 ---
 title: "Server-side JS SDK"
 sidebarTitle: "JavaScript"
-description: "O SDK Server-side em JavaScript da Serenys que permite que você interaja com todos os endpoints da API da Serenys."
+description:
+  "The Serenys server-side JS SDK allows you to interact with all Serenys endpoints on
+  the server side."
 ---
 
-Atualmente, este SDK está disponível apenas para Node.js.
+Currently, the SDK is compatible with [Node.js](https://nodejs.org/en/).
 
-## Instalando
+## Installing
 
 ```bash
-npm install serenys
+# NPM
+npm i serenys
 
-# Se você usa yarn
+# Or with Yarn
 yarn add serenys
 
-# Se você usa pnpm
-pnpm add serenys
+# Or with Bun
+bun add serenys
 ```
 
-## Criando uma instância do SDK
+## Creating an SDK Instance
 
 ```js JS
 import { Serenys } from "serenys";
 
-// Exportando a instância do SDK para que você possa usá-la em toda o seu código base
+// Export the Serenys SDK instance so you can use it throughout your codebase
 export const serenys = new Serenys();
 
-// Discord
-
-// Exemplo: Pegando um usuário do Discord
+// Exemplo: Getting an Discord User
 await serenys.discord.users.get("299262860440371202");
 
-// Exemplo: Pegando um convite de um servidor do Discord
+// Example: Getting an invite from a Discord server
 await serenys.discord.invites.get("discloud");
 
-// Instagram
-
-// Exemplo: Pegando um usuário do Instagram
+// Example: Getting an Instagram user
 await serenys.instagram.users.get("hhh.e_c.v");
 
-// Exemplo: Pegando um post de um usuário Instagram
+// Example: Getting a post from an Instagram user
 await serenys.instagram.posts.get("Ctt93euSakq");
 
-// Exemplo: Pegando as últimas 4 postagens de um usuário do Instagram
+// Example: Getting the last 4 posts of an Instagram user
 await serenys.instagram.feed.get("hhh.e_c.v");
 ```

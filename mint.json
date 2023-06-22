@@ -22,18 +22,18 @@
 			"url": "https://github.com/serenysjs"
 		},
 		{
-			"name": "Servidor de Suporte",
+			"name": "Community",
 			"icon": "discord",
 			"url": "https://discord.com/invite/discloud"
 		}
 	],
 	"navigation": [
 		{
-			"group": "Começando",
+			"group": "Getting Started",
 			"pages": ["getting-started/introduction"]
 		},
 		{
-			"group": "Referência",
+			"group": "Reference",
 			"pages": [
 				{
 					"group": "REST API",

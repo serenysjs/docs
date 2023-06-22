@@ -1,27 +1,27 @@
 ---
-title: "Obter informações de uma postagem"
+title: "Get user's post"
 api: "GET https://serenys.xyz/api/instagram/posts/Ctt93euSakq"
-description: "Este endpoint te permite obter informações de uma postagem do Instagram."
+description: "This endpoint allows you to get information about a post"
 ---
 
-### Resposta
+### Response
 
-<Expandable title="Parâmetros">
+<Expandable title="Parameters">
   <ResponseField name="account" type="object">
-    Informações básicas da conta.
+    Basic account information.
   </ResponseField>
 
   <ResponseField name="post" type="object">
-	  Informações básicas da postagem, como o id, descrição e a data de publicação.
+	  Basic post information such as id, description, and publication date.
   </ResponseField>
 
   <ResponseField name="stats" type="object">
-	  Informações sobre as estatísticas da postagem, como a quantidade de imagens e
-	  vídeos, curtidas, comentários, etc.
+	  Information about post statistics such as the number of images and videos,
+	  likes, comments, etc.
   </ResponseField>
 
   <ResponseField name="media" type="object">
-    Informações sobre a mídia da postagem, como o tipo, a url e o tamanho.
+    Information about the post's media, such as the type, url, and size.
   </ResponseField>
 </Expandable>
 
