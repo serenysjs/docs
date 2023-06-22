@@ -17,6 +17,9 @@ npm i serenys
 # Or with Yarn
 yarn add serenys
 
+# Or with Pnpm
+pnpm add serenys
+
 # Or with Bun
 bun add serenys
 ```
@@ -29,7 +32,7 @@ import { Serenys } from "serenys";
 // Export the Serenys SDK instance so you can use it throughout your codebase
 export const serenys = new Serenys();
 
-// Exemplo: Getting an Discord User
+// Example: Getting an Discord User
 await serenys.discord.users.get("299262860440371202");
 
 // Example: Getting an invite from a Discord server
